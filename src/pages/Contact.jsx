@@ -35,7 +35,7 @@ function Contact() {
         </div>
 
         <div className="h-56 mt-10 bg-charcoal2 border border-white/10 flex items-center justify-center text-cream/30 text-sm">
-          Map placeholder — embed goes here
+          Map placeholder
         </div>
       </div>
 
