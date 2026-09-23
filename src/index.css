@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* small global tweaks that don't really belong in a utility class */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-charcoal text-cream font-body;
+}
+
+::selection {
+  background-color: #c9a15a;
+  color: #171512;
+}
+
+/* thin gold scrollbar, mostly for desktop chrome/edge */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #171512;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a4236;
+  border-radius: 8px;
+}
+
+/* used on section headings across the site instead of an all-caps eyebrow label */
+.section-heading {
+  @apply font-display text-4xl md:text-5xl text-cream;
+}
+
+.divider-line {
+  width: 46px;
+  height: 2px;
+  background: #c9a15a;
+}
